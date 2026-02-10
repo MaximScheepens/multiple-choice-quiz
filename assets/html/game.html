@@ -18,8 +18,14 @@
 </head>
 
 <body>
+
   <main class="container">
     <div id="game" class="justify-center flex-column">
+
+      <div id="selectQuestionare">
+        <input type="file" id="questionsFile" accept=".json,application/json">
+      </div>
+
       <div id="hud">
         <div class="hud-item">
 
@@ -46,7 +52,7 @@
       </div>
 
       <!-- Dummy example -->
-      <h2 id="question">What is the answer to this questions?</h2>
+      <h2 id="question">What is the answer(s) to this questions?</h2>
       <div class="choice-container">
         <p class="choice-prefix">A</p>
         <p class="choice-text" data-number="1">Choice 1</p>
@@ -62,6 +68,18 @@
       <div class="choice-container">
         <p class="choice-prefix">D</p>
         <p class="choice-text" data-number="4">Choice 4</p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-prefix">E</p>
+        <p class="choice-text" data-number="5">Choice 5</p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-prefix">F</p>
+        <p class="choice-text" data-number="6">Choice 6</p>
+      </div>
+      <div class="button-container">
+        <button type="text" class="prevButton" id="prevButton" onclick="prevButtonOnClick()">&lt;</button>
+        <button type="text" class="nextButton" id="nextButton" onclick="nextButtonOnClick()">&gt;</button>
       </div>
     </div>
   </main>
